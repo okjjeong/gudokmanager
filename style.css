@@ -1,0 +1,82 @@
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --fg: #1a1c1b;
+  --muted: #5b6360;
+  --line: #e3e7e5;
+  --accent: #1E70FC;
+  --card: #f6f8f7;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14181a;
+    --fg: #e6eaec;
+    --muted: #9aa4a8;
+    --line: #2a3134;
+    --accent: #6aa3ff;
+    --card: #1b2124;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 0 20px 96px;
+  background: var(--bg);
+  color: var(--fg);
+  font: 16px/1.75 -apple-system, BlinkMacSystemFont, "Segoe UI", "Malgun Gothic",
+        "Apple SD Gothic Neo", "Noto Sans KR", Roboto, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+main { max-width: 720px; margin: 0 auto; }
+header {
+  padding: 48px 0 24px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 32px;
+}
+.app {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-weight: 700; color: var(--accent); text-decoration: none;
+  font-size: 15px; letter-spacing: -0.01em;
+}
+.mark {
+  width: 26px; height: 26px; border-radius: 7px;
+  background: #1E70FC; color: #fff;
+  display: grid; place-items: center;
+  font-weight: 800; font-size: 15px;
+}
+h1 { font-size: 27px; line-height: 1.35; margin: 20px 0 8px; letter-spacing: -0.02em; }
+h2 { font-size: 19px; margin: 40px 0 10px; letter-spacing: -0.01em; }
+h3 { font-size: 16px; margin: 28px 0 8px; }
+p, li { color: var(--fg); }
+.date { color: var(--muted); font-size: 14px; margin: 0; }
+.lead { color: var(--muted); }
+ul, ol { padding-left: 22px; }
+li { margin: 4px 0; }
+a { color: var(--accent); }
+table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 15px; }
+th, td { border: 1px solid var(--line); padding: 10px 12px; text-align: left; vertical-align: top; }
+th { background: var(--card); font-weight: 600; }
+.box {
+  background: var(--card); border: 1px solid var(--line);
+  border-radius: 12px; padding: 18px 20px; margin: 20px 0;
+}
+.box p:first-child { margin-top: 0; }
+.box p:last-child { margin-bottom: 0; }
+code {
+  background: var(--card); border: 1px solid var(--line);
+  border-radius: 5px; padding: 1px 5px; font-size: 0.9em;
+}
+footer {
+  margin-top: 56px; padding-top: 24px;
+  border-top: 1px solid var(--line);
+  color: var(--muted); font-size: 14px;
+}
+footer a { margin-right: 16px; }
+details { margin-top: 48px; border-top: 1px solid var(--line); padding-top: 24px; }
+summary { cursor: pointer; color: var(--muted); font-size: 15px; }
+details[open] summary { margin-bottom: 8px; }
+@media (max-width: 480px) {
+  h1 { font-size: 23px; }
+  table { font-size: 14px; }
+  th, td { padding: 8px 10px; }
+}

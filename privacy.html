@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>구독매니저 개인정보처리방침</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+
+<header>
+  <a class="app" href="./"><span class="mark">S</span> 구독매니저</a>
+  <h1>개인정보처리방침</h1>
+  <p class="date">시행일: 2026년 9월 9일</p>
+</header>
+
+<p class="lead">
+구독매니저(이하 &ldquo;앱&rdquo;)는 이용자의 개인정보를 소중히 다룹니다.
+이 방침은 앱이 어떤 정보를 어떻게 다루는지 설명합니다.
+</p>
+
+<h2>1. 로그인하지 않으면 아무것도 수집하지 않습니다</h2>
+<p>
+앱의 모든 기능은 로그인 없이 사용할 수 있습니다. 로그인하지 않은 상태에서 입력한
+구독 정보는 기기 안의 데이터베이스에만 저장되며, 어떤 서버로도 전송되지 않습니다.
+앱을 삭제하면 이 데이터도 함께 사라집니다.
+</p>
+
+<h2>2. 로그인했을 때 수집하는 정보</h2>
+<p>
+여러 기기에서 같은 데이터를 쓰기 위해 구글 계정으로 로그인하면, 다음 정보가
+Google Firebase(Firebase Authentication &middot; Cloud Firestore)에 저장됩니다.
+</p>
+<table>
+  <tr><th>구분</th><th>항목</th></tr>
+  <tr>
+    <td>계정 정보</td>
+    <td>구글 계정의 이름, 이메일 주소, 계정 식별자(uid)</td>
+  </tr>
+  <tr>
+    <td>이용자가 입력한 구독 정보</td>
+    <td>서비스 이름, 유형, 금액, 통화, 결제 주기, 시작일 &middot; 종료일,
+        결제수단 별칭, 구매계정 메모, 메모, n빵 파티원으로 적은 이름과 금액</td>
+  </tr>
+  <tr>
+    <td>앱 설정</td>
+    <td>알림 설정, 언어, 기준 통화</td>
+  </tr>
+</table>
+<p>
+앱은 카드번호, 계좌번호, 주민등록번호, 전화번호, 주소, 위치 정보를 요구하지 않으며
+수집하지도 않습니다. 결제수단 칸은 &ldquo;신한 체크 1234&rdquo; 처럼 이용자가 알아보기 위한
+별칭을 자유롭게 적는 칸이며, 실제 결제에 쓰이지 않습니다.
+</p>
+
+<h2>3. 수집한 정보를 쓰는 목적</h2>
+<ul>
+  <li>여러 기기에서 같은 구독 목록을 보여주기 위해</li>
+  <li>같은 이용자의 데이터인지 구분하기 위해</li>
+</ul>
+<p>
+이 외의 목적으로 쓰지 않습니다. 광고에 쓰지 않고, 이용자의 데이터를 분석하거나
+프로파일링하지 않습니다.
+</p>
+
+<h2>4. 제3자 제공 &middot; 판매</h2>
+<p>이용자의 개인정보를 제3자에게 제공하거나 판매하지 않습니다.</p>
+<p>
+데이터 보관에는 Google LLC 의 Firebase 를 이용합니다. Google 은 앱의 위탁을 받아
+데이터를 저장할 뿐이며, 저장된 내용은 해당 이용자의 계정(uid) 아래에만 있고
+보안 규칙에 따라 본인만 읽고 쓸 수 있습니다. Firebase 의 개인정보 처리는
+<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a>을 따릅니다.
+</p>
+<p>
+Firebase 서버는 통신 과정에서 접속 IP 주소 등을 서비스 로그로 남길 수 있습니다.
+이는 Google 이 서비스 운영을 위해 남기는 기록이며 앱이 별도로 수집하거나 열람하지 않습니다.
+</p>
+
+<h2>5. 사진</h2>
+<p>
+구독 아이콘으로 앨범의 사진이나 촬영한 사진을 지정할 수 있습니다. 이 사진은 기기 안에만
+저장되며 서버로 전송되지 않고, 로그인해도 동기화되지 않습니다. 앱은 사진 전체 목록에
+접근하지 않고, 이용자가 고른 한 장만 전달받습니다.
+</p>
+
+<h2>6. 알림</h2>
+<p>
+결제일 알림은 기기 안에서 예약되고 기기 안에서 울립니다. 알림을 보내기 위해 서버로
+정보를 보내지 않습니다. 푸시 알림(FCM)을 사용하지 않습니다.
+</p>
+
+<h2>7. 환율</h2>
+<p>
+외화 구독이 있을 때 환율 정보를 받아옵니다(European Central Bank 고시값을 제공하는
+Frankfurter API). 이때 전송되는 것은 날짜와 통화 코드뿐이며, 이용자를 식별할 수 있는
+정보는 함께 보내지 않습니다.
+</p>
+
+<h2>8. 보관 기간과 삭제</h2>
+<ul>
+  <li>로그아웃하면 그 기기에 있던 데이터가 지워집니다. 계정에 올라간 데이터는 남아 있으며
+      다시 로그인하면 복원됩니다.</li>
+  <li>앱 안의 <strong>설정 &rsaquo; 계정 &rsaquo; 회원탈퇴</strong> 를 누르면 계정과 계정에
+      저장된 모든 구독 데이터가 즉시 삭제되며 복구할 수 없습니다.</li>
+  <li>앱을 지운 뒤에도 계정 데이터를 지우고 싶다면
+      <a href="delete-account.html">계정 &middot; 데이터 삭제 안내</a>를 따라 주세요.</li>
+</ul>
+
+<h2>9. 아동의 개인정보</h2>
+<p>
+앱은 만 18세 미만을 대상으로 하지 않으며, 아동의 개인정보를 의도적으로 수집하지 않습니다.
+</p>
+
+<h2>10. 이용자의 권리</h2>
+<p>
+이용자는 자신의 데이터에 대해 열람 &middot; 정정 &middot; 삭제를 요청할 수 있습니다.
+구독 정보는 앱 안에서 직접 고치거나 지울 수 있으며, 계정 전체 삭제는 8번의 회원탈퇴로
+처리됩니다. 그 밖의 요청은 아래 연락처로 보내 주세요.
+</p>
+
+<h2>11. 방침 변경</h2>
+<p>이 방침이 바뀌면 이 페이지에 변경 내용과 시행일을 표시합니다.</p>
+
+<h2>12. 연락처</h2>
+<div class="box">
+  <p>구독매니저</p>
+  <p><a href="mailto:0lines.com@gmail.com">0lines.com@gmail.com</a></p>
+</div>
+
+<details>
+<summary>English version</summary>
+
+<h2>SubManager Privacy Policy</h2>
+<p class="date">Effective date: 9 September 2026</p>
+
+<h3>1. Nothing is collected unless you sign in</h3>
+<p>
+Every feature works without an account. While signed out, the subscriptions you enter
+are stored only in a database on your device and are never sent to any server.
+Deleting the app deletes that data with it.
+</p>
+
+<h3>2. What is collected when you sign in</h3>
+<p>
+Signing in with Google turns on syncing across your devices. From that point the
+following is stored in Google Firebase (Firebase Authentication and Cloud Firestore):
+</p>
+<ul>
+  <li>Account information: the name, email address and account identifier (uid) of your
+      Google account</li>
+  <li>The subscription information you entered: service name, category, amount, currency,
+      billing cycle, start and end dates, payment-method nickname, purchase-account note,
+      memo, and the names and amounts you recorded for people sharing a plan</li>
+  <li>App settings: notification preferences, language, base currency</li>
+</ul>
+<p>
+The app never asks for and never collects card numbers, bank account numbers, national
+identification numbers, phone numbers, addresses or location. The payment-method field is
+a free-text nickname (for example &ldquo;Visa 1234&rdquo;) that you write for your own
+reference; it is not used to make any payment.
+</p>
+
+<h3>3. How it is used</h3>
+<p>
+Only to show you the same subscription list on your other devices and to tell your data
+apart from another user's. It is not used for advertising, analytics or profiling.
+</p>
+
+<h3>4. Sharing</h3>
+<p>
+Your information is never sold or shared with third parties. Storage is provided by
+Google LLC (Firebase) acting as a processor on our behalf. All documents live under your
+own account identifier and security rules allow only you to read or write them. Google's
+handling is governed by the
+<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.
+Firebase servers may keep service logs, such as connection IP addresses; the app neither
+collects nor reads them.
+</p>
+
+<h3>5. Photos</h3>
+<p>
+You may set a photo from your album or camera as a subscription icon. It stays on your
+device, is never uploaded, and is not synced even when you are signed in. The app receives
+only the single photo you pick.
+</p>
+
+<h3>6. Notifications</h3>
+<p>
+Billing reminders are scheduled and delivered on the device. Nothing is sent to a server
+to deliver them, and push notifications (FCM) are not used.
+</p>
+
+<h3>7. Exchange rates</h3>
+<p>
+When you have a subscription in a foreign currency, the app fetches published rates
+(European Central Bank rates via the Frankfurter API). Only dates and currency codes are
+sent; nothing that identifies you.
+</p>
+
+<h3>8. Retention and deletion</h3>
+<ul>
+  <li>Signing out clears the data on that device. The data in your account remains and is
+      restored when you sign in again.</li>
+  <li><strong>Settings &rsaquo; Account &rsaquo; Delete account</strong> in the app
+      immediately and irreversibly deletes your account and every subscription stored in it.</li>
+  <li>If you have already uninstalled the app, follow the
+      <a href="delete-account.html">account and data deletion instructions</a>.</li>
+</ul>
+
+<h3>9. Children</h3>
+<p>
+The app is not directed to anyone under 18 and does not knowingly collect information
+from children.
+</p>
+
+<h3>10. Your rights</h3>
+<p>
+You may access, correct or delete your data. Subscriptions can be edited or deleted in the
+app; full account deletion is described in section 8. For any other request, use the
+contact address below.
+</p>
+
+<h3>11. Changes</h3>
+<p>Changes to this policy will be posted on this page with a new effective date.</p>
+
+<h3>12. Contact</h3>
+<p>SubManager &mdash; <a href="mailto:0lines.com@gmail.com">0lines.com@gmail.com</a></p>
+
+</details>
+
+<footer>
+  <a href="./">홈</a>
+  <a href="delete-account.html">계정 &middot; 데이터 삭제</a>
+</footer>
+
+</main>
+</body>
+</html>
